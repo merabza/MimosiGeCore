@@ -6,8 +6,6 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class TeacherSalaryScheme : IDataType
 {
-    public int Id { get; set; }
-
     /// <summary>
     ///     სქემის სახელი
     /// </summary>
@@ -28,6 +26,7 @@ public sealed class TeacherSalaryScheme : IDataType
     public ICollection<Lesson> Lessons { get; set; } = new List<Lesson>();
 
     public ICollection<TeacherContract> TeacherContracts { get; set; } = new List<TeacherContract>();
+    public int Id { get; set; }
 
     [NotMapped] public string? Key => null;
 

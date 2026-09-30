@@ -6,14 +6,13 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class LessonStatus : IDataType
 {
-    public int Id { get; set; }
-
     /// <summary>
     ///     სტატუსის დასახელება
     /// </summary>
     public required string StatusName { get; set; }
 
     public ICollection<Lesson> Lessons { get; set; } = new List<Lesson>();
+    public int Id { get; set; }
 
     [NotMapped] public string? Key => null;
 

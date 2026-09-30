@@ -6,10 +6,6 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class WeekDay : IDataType
 {
-    public int Id { get; set; }
-
-    public required string Name { get; set; }
-
     public required string ShortName { get; set; }
 
     /// <summary>
@@ -18,6 +14,9 @@ public sealed class WeekDay : IDataType
     public int WeekDayNumber { get; set; }
 
     public ICollection<GroupDayTimePlace> GroupDayTimePlaces { get; set; } = new List<GroupDayTimePlace>();
+    public int Id { get; set; }
+
+    public required string Name { get; set; }
 
     [NotMapped] public string? Key => null;
 

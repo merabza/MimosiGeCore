@@ -6,11 +6,10 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class Room : IDataType
 {
-    public int Id { get; set; }
-
     public string RoomName { get; set; } = null!;
 
     public ICollection<GroupDayTimePlace> GroupDayTimePlaces { get; set; } = new List<GroupDayTimePlace>();
+    public int Id { get; set; }
 
     [NotMapped] public string? Key => null;
 

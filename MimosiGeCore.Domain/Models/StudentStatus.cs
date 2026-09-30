@@ -6,8 +6,6 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class StudentStatus : IDataType
 {
-    public int Id { get; set; }
-
     /// <summary>
     ///     მოსწავლის სტატუსის სახელი
     /// </summary>
@@ -21,6 +19,7 @@ public sealed class StudentStatus : IDataType
     public ICollection<Group> Groups { get; set; } = new List<Group>();
 
     public ICollection<StudentContract> StudentContracts { get; set; } = new List<StudentContract>();
+    public int Id { get; set; }
 
     [NotMapped] public string? Key => null;
 

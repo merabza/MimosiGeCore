@@ -6,8 +6,6 @@ namespace MimosiGeCore.Domain.Models;
 
 public sealed class RsCountry : IDataType
 {
-    public int Id { get; set; }
-
     /// <summary>
     ///     ქვეყნის კოდი (შემოსავლების სამსახურის)
     /// </summary>
@@ -19,6 +17,7 @@ public sealed class RsCountry : IDataType
     public required string CountryName { get; set; }
 
     public ICollection<TeacherContract> TeacherContracts { get; set; } = new List<TeacherContract>();
+    public int Id { get; set; }
 
     [NotMapped] public string Key => Code;
 
