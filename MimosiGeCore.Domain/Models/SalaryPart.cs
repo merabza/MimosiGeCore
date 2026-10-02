@@ -20,7 +20,7 @@ public sealed class SalaryPart
     public int? SalaryPartTypeId { get; set; }
 
     /// <summary>
-    ///     თანხა (მინუსი ნიშნავს გამოკლებას)
+    ///     თანხა (გამოქვითვაც დადებითი რიცხვით იწერება)
     /// </summary>
     public decimal SpAmount { get; set; }
 
