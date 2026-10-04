@@ -88,11 +88,6 @@ public sealed class TeacherContract
     public DateTime? WorkHoursEnd { get; set; }
 
     /// <summary>
-    ///     დროის ხაზი (რეპორტი r35)
-    /// </summary>
-    public int Line { get; set; }
-
-    /// <summary>
     ///     ინდივიდუალური მეწარმე
     /// </summary>
     public bool IndEnt { get; set; }

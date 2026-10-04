@@ -29,9 +29,6 @@ public interface IMimosiGeDbContext
     DbSet<LessonCheckCreateErrorLog> LessonsCheckCreateErrorLogs { get; }
     DbSet<OperationMonth> OperationMonths { get; }
     DbSet<Payment> Payments { get; }
-    DbSet<ReportCategory> ReportCategories { get; }
-    DbSet<Report> Reports { get; }
-    DbSet<ReportByCategory> ReportsByCategories { get; }
     DbSet<Room> Rooms { get; }
     DbSet<RsCountry> RsCountries { get; }
     DbSet<RsQuoteType> RsQuoteTypes { get; }
