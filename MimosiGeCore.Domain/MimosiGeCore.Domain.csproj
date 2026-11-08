@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\..\BackendCarcass\BackendCarcass.Domain\BackendCarcass.Domain.csproj" />
+    <PackageReference Include="BackendCarcass.Domain" />
   </ItemGroup>
 </Project>
