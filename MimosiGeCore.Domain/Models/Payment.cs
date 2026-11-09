@@ -36,7 +36,14 @@ public sealed class Payment
     /// </summary>
     public bool Checked { get; set; }
 
+    /// <summary>
+    ///     ბანკის ჩარიცხვა, რომლის განაწილებაცაა ეს გადახდა (D164); ხელით შეყვანილ გადახდას არ აქვს
+    /// </summary>
+    public int? BankTransactionId { get; set; }
+
     public BankAccount? BankAccount { get; set; }
+
+    public BankTransaction? BankTransaction { get; set; }
 
     public StudentContract StudentContract { get; set; } = null!;
 }

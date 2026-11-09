@@ -11,6 +11,7 @@ public interface IMimosiGeDbContext
 {
     DbSet<AcademicYear> AcademicYears { get; }
     DbSet<BankAccount> BankAccounts { get; }
+    DbSet<BankTransaction> BankTransactions { get; }
     DbSet<Course> Courses { get; }
     DbSet<CrmAnswerType> CrmAnswerTypes { get; }
     DbSet<CrmCallType> CrmCallTypes { get; }
@@ -39,6 +40,7 @@ public interface IMimosiGeDbContext
     DbSet<SalaryPart> SalaryParts { get; }
     DbSet<StudentContractDetail> StudentContractDetails { get; }
     DbSet<StudentContract> StudentContracts { get; }
+    DbSet<StudentPayer> StudentPayers { get; }
     DbSet<StudentStatus> StudentStatuses { get; }
     DbSet<TeacherContract> TeacherContracts { get; }
     DbSet<TeacherSalaryScheme> TeacherSalarySchemes { get; }
