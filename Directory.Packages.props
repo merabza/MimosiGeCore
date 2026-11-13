@@ -4,7 +4,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="BackendCarcass.Domain" Version="1.0.9813.23160" />
+    <PackageVersion Include="BackendCarcass.Domain" Version="1.0.9813.34875" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.35.0.4138" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="11.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
